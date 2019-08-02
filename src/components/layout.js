@@ -11,9 +11,9 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
+        <h5
           style={{
-            ...scale(1.5),
+            ...scale(1.1),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -28,7 +28,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h1>
+        </h5>
       )
     } else {
       header = (
@@ -63,9 +63,9 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          {/* © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </footer>
       </div>
     )
